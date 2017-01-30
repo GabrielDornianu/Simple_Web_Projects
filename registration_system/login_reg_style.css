@@ -1,0 +1,45 @@
+.login, .register{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 20px;
+	background-color: #800000;
+	max-width: 400px;
+	font-family: helvetica;
+	color: white;
+	border-radius: 10px;
+}
+
+.login form, .register form{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.login form *, .register form *{
+	padding: 5px;
+	border: 0;
+	font-size: 120%;
+}
+
+.login form *[type="submit"], .register form *[type="submit"]{
+	background: linear-gradient(rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 150%;
+	padding: 10px;
+	border: 2px solid #8adaa5;
+}
+
+.login a, .register a{
+	display: block;
+	text-decoration: none;
+	color: lightblue;
+	margin-top: 20px;
+	align-self: flex-end;
+	font-size: 140%;
+}
+
+.login a:hover, .register a:hover{
+	color: white;
+}
