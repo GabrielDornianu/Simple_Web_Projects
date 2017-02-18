@@ -1,17 +1,14 @@
 <?php
-	
-	
+	require("ajax_request.php");
 	echo '<link rel="stylesheet" href="login_reg_style.css" type="text/css">';
 	echo '<link rel="stylesheet" href="main_style.css" type="text/css">';
-	echo '<link rel="stylesheet" href="footer_style.css" type="text/css">';
-
 ?>
 
 <html>
 <body>
 
 <div class="register">
-<form action="main_page.php" method="post">
+<form  method="post" onsubmit="submit_data();">
 <label for="username">Username:</label>
 <input type="text" name="username" id="username"></br>
 <label for="password1">Password:</label>
